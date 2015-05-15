@@ -92,7 +92,7 @@
 
     <ul class="nav nav-sidebar nav-main">
         <g:each in="${Category.getTopCategories()}" var="category">
-            <li <g:if test="${category.code == parentCategory?.code}">class="active"</g:if> <g:if test="${isSub}">data-toggle="tooltip" data-placement="right" data-container="body" title="<g:message code="${category.labelCode}" default="${category.defaultLabel}" />"</g:if>><g:link uri="/articles/${category.code}" class="link"><i class="nav-icon ${category.iconCssNames}"></i> <span class="nav-sidebar-label nav-sidebar-category-label"><g:message code="${category.labelCode}" default="${category.defaultLabel}" /></span></g:link></li>
+            <li <g:if test="${category.code == parentCategory?.code}">class="active"</g:if> <g:if test="${isSub}">data-toggle="tooltip" data-placement="right" data-container="body" title=""</g:if>><g:link uri="/articles/${category.code}" class="link"><i class="nav-icon ${category.iconCssNames}"></i> <span class="nav-sidebar-label nav-sidebar-category-label"><g:message code="${category.labelCode}" default="${category.defaultLabel}" /></span></g:link></li>
         </g:each>
     </ul>
 
